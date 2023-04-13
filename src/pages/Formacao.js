@@ -1,10 +1,16 @@
 import { React } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Button } from 'react-native-web';
 
 const Formacao = () => {
     return(
         <View style={styles.container}>
-            <Text style={styles.title}>Meu Nome é </Text>
+            <Text style={styles.title}>Meu Nome é Guilerme </Text>
+
+            <Button
+                title="voltar"
+                onPress={ () => navigation.navigate('Home') } 
+            />
         </View>
     );
 }
